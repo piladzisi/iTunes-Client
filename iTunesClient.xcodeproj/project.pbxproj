@@ -15,6 +15,8 @@
 		4F5FA77022720E7B00E87975 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA76F22720E7B00E87975 /* Artist.swift */; };
 		4F5FA77222720FF900E87975 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA77122720FF900E87975 /* Genre.swift */; };
 		4F5FA7742272103900E87975 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7732272103900E87975 /* Album.swift */; };
+		4F5FA776227214CA00E87975 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA775227214CA00E87975 /* Song.swift */; };
+		4F5FA778227216B400E87975 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA777227216B400E87975 /* Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4F5FA76F22720E7B00E87975 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		4F5FA77122720FF900E87975 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		4F5FA7732272103900E87975 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4F5FA775227214CA00E87975 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		4F5FA777227216B400E87975 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				4F5FA76F22720E7B00E87975 /* Artist.swift */,
 				4F5FA77122720FF900E87975 /* Genre.swift */,
 				4F5FA7732272103900E87975 /* Album.swift */,
+				4F5FA775227214CA00E87975 /* Song.swift */,
+				4F5FA777227216B400E87975 /* Stub.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,11 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5FA776227214CA00E87975 /* Song.swift in Sources */,
 				4F5FA77022720E7B00E87975 /* Artist.swift in Sources */,
 				4F406EDB22720CF80005217D /* ViewController.swift in Sources */,
 				4F406ED922720CF80005217D /* AppDelegate.swift in Sources */,
 				4F5FA77222720FF900E87975 /* Genre.swift in Sources */,
 				4F5FA7742272103900E87975 /* Album.swift in Sources */,
+				4F5FA778227216B400E87975 /* Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
