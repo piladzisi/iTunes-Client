@@ -12,6 +12,9 @@
 		4F406EDE22720CF80005217D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F406EDC22720CF80005217D /* Main.storyboard */; };
 		4F406EE022720CFA0005217D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F406EDF22720CFA0005217D /* Assets.xcassets */; };
 		4F406EE322720CFA0005217D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F406EE122720CFA0005217D /* LaunchScreen.storyboard */; };
+		4F5FA77022720E7B00E87975 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA76F22720E7B00E87975 /* Artist.swift */; };
+		4F5FA77222720FF900E87975 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA77122720FF900E87975 /* Genre.swift */; };
+		4F5FA7742272103900E87975 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7732272103900E87975 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4F406EDF22720CFA0005217D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F406EE222720CFA0005217D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F406EE422720CFA0005217D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5FA76F22720E7B00E87975 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		4F5FA77122720FF900E87975 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		4F5FA7732272103900E87975 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		4F406ED722720CF80005217D /* iTunesClient */ = {
 			isa = PBXGroup;
 			children = (
+				4F5FA76E22720E6500E87975 /* Controller */,
+				4F5FA76D22720E6000E87975 /* View */,
+				4F5FA76C22720E5800E87975 /* Model */,
 				4F406ED822720CF80005217D /* AppDelegate.swift */,
 				4F406EDA22720CF80005217D /* ViewController.swift */,
 				4F406EDC22720CF80005217D /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				4F406EE422720CFA0005217D /* Info.plist */,
 			);
 			path = iTunesClient;
+			sourceTree = "<group>";
+		};
+		4F5FA76C22720E5800E87975 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F5FA76F22720E7B00E87975 /* Artist.swift */,
+				4F5FA77122720FF900E87975 /* Genre.swift */,
+				4F5FA7732272103900E87975 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F5FA76D22720E6000E87975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F5FA76E22720E6500E87975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5FA77022720E7B00E87975 /* Artist.swift in Sources */,
 				4F406EDB22720CF80005217D /* ViewController.swift in Sources */,
 				4F406ED922720CF80005217D /* AppDelegate.swift in Sources */,
+				4F5FA77222720FF900E87975 /* Genre.swift in Sources */,
+				4F5FA7742272103900E87975 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
