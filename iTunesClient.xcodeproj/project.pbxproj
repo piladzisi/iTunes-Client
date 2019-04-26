@@ -32,6 +32,7 @@
 		4F5FA79922730B4600E87975 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA79822730B4600E87975 /* Endpoint.swift */; };
 		4F5FA79B22733BDE00E87975 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA79A22733BDE00E87975 /* ItunesEntity.swift */; };
 		4F5FA79D22733F0600E87975 /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA79C22733F0600E87975 /* QueryItemProvider.swift */; };
+		4F5FA79F227341A300E87975 /* ItunesAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA79E227341A300E87975 /* ItunesAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		4F5FA79822730B4600E87975 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		4F5FA79A22733BDE00E87975 /* ItunesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesEntity.swift; sourceTree = "<group>"; };
 		4F5FA79C22733F0600E87975 /* QueryItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
+		4F5FA79E227341A300E87975 /* ItunesAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +166,10 @@
 		4F5FA79522730AAF00E87975 /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
-				4F5FA79622730AF500E87975 /* ItunesMedia.swift */,
 				4F5FA79822730B4600E87975 /* Endpoint.swift */,
+				4F5FA79622730AF500E87975 /* ItunesMedia.swift */,
 				4F5FA79A22733BDE00E87975 /* ItunesEntity.swift */,
+				4F5FA79E227341A300E87975 /* ItunesAttributes.swift */,
 				4F5FA79C22733F0600E87975 /* QueryItemProvider.swift */,
 			);
 			path = Endpoint;
@@ -250,6 +253,7 @@
 				4F5FA78A2272F58F00E87975 /* AlbumCellViewModel.swift in Sources */,
 				4F406ED922720CF80005217D /* AppDelegate.swift in Sources */,
 				4F5FA7902273041A00E87975 /* AlbumDetailDataSource.swift in Sources */,
+				4F5FA79F227341A300E87975 /* ItunesAttributes.swift in Sources */,
 				4F5FA7872272F36D00E87975 /* AlbumListDataSource.swift in Sources */,
 				4F5FA79D22733F0600E87975 /* QueryItemProvider.swift in Sources */,
 				4F5FA7942273060200E87975 /* SongViewModel.swift in Sources */,

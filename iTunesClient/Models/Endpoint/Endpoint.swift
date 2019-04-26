@@ -30,6 +30,7 @@ extension Endpoint {
 
 enum Itunes {
     case search(term: String, media: ItunesMedia?)
+    case lookup(id: Int, entity: ItunesEntity?)
 }
 
 
@@ -41,7 +42,9 @@ extension Itunes: Endpoint {
     var path: String {
         switch self {
         case .search: return "/search"
+        case .lookup: return "/lookup"
         }
+        
     }
     var queryItems: [URLQueryItem] {
         switch self {
@@ -57,10 +60,20 @@ extension Itunes: Endpoint {
                 
                 if let entityQueryItem = media.entityQueryItem {
                     result.append(entityQueryItem)
+                    
+                if let attribureQueryItem = media.attributeQueryItem {
+                       result.append(attribureQueryItem)
+                    }
                 }
             }
             
             return result
+            
+        case .lookup(let id, let entity):
+            return [
+            URLQueryItem(name: "id", value: id.description),
+            URLQueryItem(name: "entity", value: entity?.entityName)
+            ]
         }
     }
 }

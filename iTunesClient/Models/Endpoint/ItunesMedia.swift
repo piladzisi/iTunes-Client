@@ -9,16 +9,16 @@
 import Foundation
 
 enum ItunesMedia {
-    case movie
-    case podcast
-    case music(entity: MusicEntity?)
-    case musicVideo
-    case audiobook
-    case shortFilm
-    case tvShow
-    case software
-    case ebook
-    case all
+    case movie(entity: MovieEntity?, attribute: MovieAttribute?)
+    case podcast(entity: PodcastEntity?, attribute: PodcastAttribute?)
+    case music(entity: MusicEntity?, attribute: MusicAttribute?)
+    case musicVideo(entity: MusicVideoEntity?, attribute: MusicVideoAttribute?)
+    case audiobook(entity: AudiobookEntity?, attribute: AudiobookAttribute?)
+    case shortFilm(entity: ShortFilmEntity?, attribute: ShortFilmAttribute?)
+    case tvShow(entity: TVShowEntity?, attribute: TVShowAttribute?)
+    case software(entity: SoftwareEntity?, attribute: SoftwareAttribute?)
+    case ebook(entity: EbookEntity?)
+    case all(entity: AllEntity?, attribute: AllAttribute?)
 }
 
 extension ItunesMedia: CustomStringConvertible {
@@ -38,14 +38,34 @@ extension ItunesMedia: CustomStringConvertible {
     }
 }
 
-
 extension ItunesMedia {
     var entityQueryItem: URLQueryItem? {
         switch self {
-        case .music(let entity):
-            return entity?.queryItem
-        default:
-            return nil
+        case .movie(let entity, _): return entity?.queryItem
+        case .podcast(let entity, _): return entity?.queryItem
+        case .music(let entity, _): return entity?.queryItem
+        case .musicVideo(let entity, _): return entity?.queryItem
+        case .audiobook(let entity, _): return entity?.queryItem
+        case .shortFilm(let entity, _): return entity?.queryItem
+        case .tvShow(let entity, _): return entity?.queryItem
+        case .software(let entity, _): return entity?.queryItem
+        case .ebook(let entity): return entity?.queryItem
+        case .all(let entity, _): return entity?.queryItem
+        }
+    }
+    
+    var attributeQueryItem: URLQueryItem? {
+        switch self {
+        case .movie(_, let attribute): return attribute?.queryItem
+        case .podcast(_, let attribute): return attribute?.queryItem
+        case .music(_, let attribute): return attribute?.queryItem
+        case .musicVideo(_, let attribute): return attribute?.queryItem
+        case .audiobook(_, let attribute): return attribute?.queryItem
+        case .shortFilm(_, let attribute): return attribute?.queryItem
+        case .tvShow(_, let attribute): return attribute?.queryItem
+        case .software(_, let attribute): return attribute?.queryItem
+        case .ebook: return nil
+        case .all(_, let attribute): return attribute?.queryItem
         }
     }
 }
