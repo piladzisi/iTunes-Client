@@ -19,11 +19,19 @@ class SearchResultsController: UITableViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(SearchResultsController.dismissSearchResultsController))
         
         tableView.tableHeaderView = searchController.searchBar
+        searchController.dimsBackgroundDuringPresentation = false
         
+        searchController.searchResultsUpdater = self
     }
 
  
     @objc func dismissSearchResultsController() {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension SearchResultsController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        print(searchController.searchBar.text!)
     }
 }
