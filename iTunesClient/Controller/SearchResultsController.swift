@@ -25,7 +25,7 @@ class SearchResultsController: UITableViewController {
         searchController.searchResultsUpdater = self
         
         tableView.dataSource = dataSource
-        definesPresentationContext = true // this view controller is covered when presents another view controleer. 
+        definesPresentationContext = true // this view controller is covered when presents another view controller.
     }
 
  

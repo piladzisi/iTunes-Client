@@ -19,6 +19,8 @@
 		4F5FA778227216B400E87975 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA777227216B400E87975 /* Stub.swift */; };
 		4F5FA77C2272D12E00E87975 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA77B2272D12E00E87975 /* SearchResultsController.swift */; };
 		4F5FA77F2272D80900E87975 /* SearchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA77E2272D80900E87975 /* SearchResultsDataSource.swift */; };
+		4F5FA7812272E8F400E87975 /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7802272E8F400E87975 /* AlbumListController.swift */; };
+		4F5FA7852272EA0100E87975 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7842272EA0100E87975 /* AlbumCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		4F5FA777227216B400E87975 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		4F5FA77B2272D12E00E87975 /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		4F5FA77E2272D80900E87975 /* SearchResultsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsDataSource.swift; sourceTree = "<group>"; };
+		4F5FA7802272E8F400E87975 /* AlbumListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
+		4F5FA7842272EA0100E87975 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		4F5FA76D22720E6000E87975 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4F5FA7842272EA0100E87975 /* AlbumCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			children = (
 				4F406EDA22720CF80005217D /* ViewController.swift */,
 				4F5FA77B2272D12E00E87975 /* SearchResultsController.swift */,
+				4F5FA7802272E8F400E87975 /* AlbumListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,9 +199,11 @@
 				4F406EDB22720CF80005217D /* ViewController.swift in Sources */,
 				4F406ED922720CF80005217D /* AppDelegate.swift in Sources */,
 				4F5FA77C2272D12E00E87975 /* SearchResultsController.swift in Sources */,
+				4F5FA7812272E8F400E87975 /* AlbumListController.swift in Sources */,
 				4F5FA77222720FF900E87975 /* Genre.swift in Sources */,
 				4F5FA7742272103900E87975 /* Album.swift in Sources */,
 				4F5FA77F2272D80900E87975 /* SearchResultsDataSource.swift in Sources */,
+				4F5FA7852272EA0100E87975 /* AlbumCell.swift in Sources */,
 				4F5FA778227216B400E87975 /* Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
