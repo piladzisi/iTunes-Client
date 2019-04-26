@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="1303" y="712"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Album Detail Controller-->
         <scene sceneID="lLo-Gp-byG">
             <objects>
-                <tableViewController id="Qbb-sr-WkH" sceneMemberID="viewController">
+                <tableViewController id="Qbb-sr-WkH" customClass="AlbumDetailController" customModule="iTunesClient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="bob-sO-wvW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,6 +237,12 @@
                             <outlet property="delegate" destination="Qbb-sr-WkH" id="dvw-aQ-jCb"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="albumGenreLabel" destination="y2Z-Me-asH" id="aWi-Jz-kdZ"/>
+                        <outlet property="albumReleaseDate" destination="xSd-Yr-gmM" id="WGU-Js-6hp"/>
+                        <outlet property="albumTitleLabel" destination="RrJ-q7-jvo" id="hzM-wO-xFZ"/>
+                        <outlet property="arworkView" destination="KCL-sE-jkA" id="3vx-N7-ELh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlA-7b-JqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
