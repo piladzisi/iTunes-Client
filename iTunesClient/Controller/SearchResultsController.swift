@@ -10,11 +10,16 @@ import UIKit
 
 class SearchResultsController: UITableViewController {
 
+    let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
        
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(SearchResultsController.dismissSearchResultsController))
+        
+        tableView.tableHeaderView = searchController.searchBar
+        
     }
 
  
