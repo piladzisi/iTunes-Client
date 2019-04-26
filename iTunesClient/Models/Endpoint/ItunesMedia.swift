@@ -11,7 +11,7 @@ import Foundation
 enum ItunesMedia {
     case movie
     case podcast
-    case music
+    case music(entity: MusicEntity?)
     case musicVideo
     case audiobook
     case shortFilm
@@ -34,6 +34,18 @@ extension ItunesMedia: CustomStringConvertible {
         case .software: return "software"
         case .ebook: return "ebook"
         case .all: return "all"
+        }
+    }
+}
+
+
+extension ItunesMedia {
+    var entityQueryItem: URLQueryItem? {
+        switch self {
+        case .music(let entity):
+            return entity?.queryItem
+        default:
+            return nil
         }
     }
 }
