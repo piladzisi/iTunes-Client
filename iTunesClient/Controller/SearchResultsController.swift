@@ -32,6 +32,22 @@ class SearchResultsController: UITableViewController {
     @objc func dismissSearchResultsController() {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    // MARL: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAlbums" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let artist = dataSource.artist(at: indexPath)
+                artist.albums = Stub.albums
+                
+                let albumListController = segue.destination as! AlbumListController
+                albumListController.artist = artist
+            }
+        }
+    }
+    
+    
 }
 
 extension SearchResultsController: UISearchResultsUpdating {
