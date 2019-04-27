@@ -12,6 +12,7 @@ class SearchResultsController: UITableViewController {
 
     let searchController = UISearchController(searchResultsController: nil)
     let dataSource = SearchResultsDataSource()
+    let client = ItunesAPIClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +53,11 @@ class SearchResultsController: UITableViewController {
 
 extension SearchResultsController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        dataSource.update(with: [Stub.artist]) //tap Search and return fake data (replaced with actual data when implemented)
-        tableView.reloadData()
+       
+        client.searchForArtists(withTerm: searchController.searchBar.text!) { [weak self] artists, error in
+                self?.dataSource.update(with: artists)
+                self?.tableView.reloadData()
+        }
+        
     }
 }

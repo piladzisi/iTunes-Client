@@ -35,6 +35,7 @@
 		4F5FA79F227341A300E87975 /* ItunesAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA79E227341A300E87975 /* ItunesAttributes.swift */; };
 		4F5FA7A222749A6800E87975 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A122749A6800E87975 /* JSONDownloader.swift */; };
 		4F5FA7A422749B3500E87975 /* ItunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A322749B3500E87975 /* ItunesError.swift */; };
+		4F5FA7A622749CD100E87975 /* ItunesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A522749CD100E87975 /* ItunesAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		4F5FA79E227341A300E87975 /* ItunesAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAttributes.swift; sourceTree = "<group>"; };
 		4F5FA7A122749A6800E87975 /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		4F5FA7A322749B3500E87975 /* ItunesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesError.swift; sourceTree = "<group>"; };
+		4F5FA7A522749CD100E87975 /* ItunesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				4F5FA7A122749A6800E87975 /* JSONDownloader.swift */,
 				4F5FA7A322749B3500E87975 /* ItunesError.swift */,
+				4F5FA7A522749CD100E87975 /* ItunesAPIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				4F5FA7942273060200E87975 /* SongViewModel.swift in Sources */,
 				4F5FA78C2272FC3700E87975 /* AlbumDetailController.swift in Sources */,
 				4F5FA77C2272D12E00E87975 /* SearchResultsController.swift in Sources */,
+				4F5FA7A622749CD100E87975 /* ItunesAPIClient.swift in Sources */,
 				4F5FA7812272E8F400E87975 /* AlbumListController.swift in Sources */,
 				4F5FA792227304BC00E87975 /* SongCell.swift in Sources */,
 				4F5FA77222720FF900E87975 /* Genre.swift in Sources */,
