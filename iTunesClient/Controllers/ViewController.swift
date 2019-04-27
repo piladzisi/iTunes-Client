@@ -19,8 +19,6 @@ class ViewController: UIViewController {
      let lookupEndpoint = Itunes.lookup(id: 159260351, entity: MusicEntity.album)
         print(lookupEndpoint.request)
         
-        
-
-}
+   }
 
 }
