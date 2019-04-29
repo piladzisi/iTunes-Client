@@ -14,11 +14,9 @@ class AlbumListController: UITableViewController {
         static let AlbumCellHeight: CGFloat = 80
     }
     
-    var artist: Artist!
+    var artist: Artist?
     
-    lazy var dataSource: AlbumListDataSource = {
-        return AlbumListDataSource(albums: self.artist.albums)
-    }()
+    var dataSource: AlbumListDataSource(albums: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,6 +18,7 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
     }
     
     // MARK: - Data Source
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -43,5 +44,10 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
     func album(at indexPath: IndexPath) -> Album {
         return albums[indexPath.row]
     }
+    
+    func update(with albums: [Album]) {
+        self.albums = albums
+    }
+    
     
 }
