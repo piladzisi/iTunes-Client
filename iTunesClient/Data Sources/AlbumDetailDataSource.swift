@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class AlbumDetailDataSource: NSObject, UITableViewDataSource {
-    private let songs: [Song]
+    private var songs: [Song]
     
     init(songs: [Song]) {
         self.songs = songs
@@ -40,6 +40,10 @@ class AlbumDetailDataSource: NSObject, UITableViewDataSource {
         case 0: return "Tracks"
         default: return nil
         }
+    }
+    
+    func update(with songs: [Song]) {
+        self.songs = songs
     }
 }
 
