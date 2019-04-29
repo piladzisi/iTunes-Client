@@ -37,6 +37,7 @@
 		4F5FA7A422749B3500E87975 /* ItunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A322749B3500E87975 /* ItunesError.swift */; };
 		4F5FA7A622749CD100E87975 /* ItunesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A522749CD100E87975 /* ItunesAPIClient.swift */; };
 		4F5FA7A82277158E00E87975 /* ArtworkDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A72277158E00E87975 /* ArtworkDownloader.swift */; };
+		4F5FA7AA2277188300E87975 /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5FA7A92277188300E87975 /* PendingOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		4F5FA7A322749B3500E87975 /* ItunesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesError.swift; sourceTree = "<group>"; };
 		4F5FA7A522749CD100E87975 /* ItunesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesAPIClient.swift; sourceTree = "<group>"; };
 		4F5FA7A72277158E00E87975 /* ArtworkDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDownloader.swift; sourceTree = "<group>"; };
+		4F5FA7A92277188300E87975 /* PendingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				4F5FA7A322749B3500E87975 /* ItunesError.swift */,
 				4F5FA7A522749CD100E87975 /* ItunesAPIClient.swift */,
 				4F5FA7A72277158E00E87975 /* ArtworkDownloader.swift */,
+				4F5FA7A92277188300E87975 /* PendingOperations.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				4F5FA7A422749B3500E87975 /* ItunesError.swift in Sources */,
 				4F5FA7A222749A6800E87975 /* JSONDownloader.swift in Sources */,
 				4F5FA7A82277158E00E87975 /* ArtworkDownloader.swift in Sources */,
+				4F5FA7AA2277188300E87975 /* PendingOperations.swift in Sources */,
 				4F5FA776227214CA00E87975 /* Song.swift in Sources */,
 				4F5FA77022720E7B00E87975 /* Artist.swift in Sources */,
 				4F406EDB22720CF80005217D /* ViewController.swift in Sources */,
