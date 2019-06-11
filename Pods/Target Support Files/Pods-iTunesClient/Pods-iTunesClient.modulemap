@@ -1,0 +1,6 @@
+framework module Pods_iTunesClient {
+  umbrella header "Pods-iTunesClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
